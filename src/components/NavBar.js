@@ -37,6 +37,9 @@ const NavBar = () => {
       <NavLink to="/interactive-examples" activeClassName="active">
         Interactive Examples
       </NavLink>
+      <NavLink to="/prompt-engineering-tips" activeClassName="active">
+        Prompt Engineering Tips
+      </NavLink>
     </NavBarContainer>
   );
 };

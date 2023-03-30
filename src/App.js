@@ -10,8 +10,9 @@ import Leaderboard from './components/Leaderboard';
 import PracticeMode from './components/PracticeMode';
 import HomePage from './pages/HomePage';
 import LeaderboardPage from './pages/LeaderboardPage';
-import PromptsGuide from './pages/PromptsGuide'; // import the PromptsGuide component
-import InteractiveExamplesPage from './pages/InteractiveExamplesPage'; // import the InteractiveExamplesPage component
+import PromptsGuide from './pages/PromptsGuide'; 
+import InteractiveExamplesPage from './pages/InteractiveExamplesPage';
+import PromptEngineeringTipsPage from './pages/PromptEngineeringTipsPage';
 import styled from '@emotion/styled';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { css, Global } from '@emotion/react';
@@ -88,7 +89,8 @@ const App = () => {
           />
           <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="/prompts-guide" element={<PromptsGuide />} />
-          <Route path="/interactive-examples" element={<InteractiveExamplesPage />} /> // add a new Route for InteractiveExamplesPage
+          <Route path="/interactive-examples" element={<InteractiveExamplesPage />} />
+          <Route path="/prompt-engineering-tips" element={<PromptEngineeringTipsPage />} />
         </Routes>
         <Footer />
       </Router>

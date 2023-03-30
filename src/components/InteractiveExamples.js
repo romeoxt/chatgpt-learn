@@ -21,8 +21,8 @@ const InteractiveExamples = () => {
   const handleSubmit = async () => {
     try {
       const result = await chatGPT(input);
-      if (result && result.choices && result.choices.length > 0) {
-        setResponse(result.choices[0].text);
+      if (result) {
+        setResponse(result);
       } else {
         console.error('Unexpected API response:', result);
         setResponse('An error occurred while fetching the response. Please check the console for more details.');
@@ -31,7 +31,7 @@ const InteractiveExamples = () => {
       console.error(err);
       setResponse('An error occurred while fetching the response. Please check the console for more details.');
     }
-  };  
+  };
 
   return (
     <Container>

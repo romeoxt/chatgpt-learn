@@ -8,8 +8,6 @@ const headers = {
   Authorization: `Bearer ${API_KEY}`,
 };
 
-console.log("API URL:", API_URL);
-
 export const chatGPT = async (inputText) => {
   try {
     const response = await axios.post(
@@ -17,7 +15,6 @@ export const chatGPT = async (inputText) => {
       {
         prompt: inputText,
         max_tokens: 50,
-        n: 1,
         stop: null,
         temperature: 0.5,
       },
@@ -27,7 +24,7 @@ export const chatGPT = async (inputText) => {
     );
     return response.data.choices[0].text.trim();
   } catch (error) {
-    console.error("Unexpected API response:", error);
     return "Error: Unable to communicate with the API.";
-  }
+}
 };
+
