@@ -3,12 +3,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 const practiceContainerStyles = css`
-  padding: 1rem;
   color: #fff;
-  width: 400px;
-  margin: 1rem auto;
-  border: 1px solid #4a4a4a;
-  border-radius: 5px;
 `;
 
 const PracticeContainer = styled.div`
@@ -44,8 +39,8 @@ const PracticeMode = () => {
   };
 
   return (
-    <PracticeContainer>
-      <h2>Practice Mode</h2>
+    <PracticeContainer className='card-container'>
+      <h2 className='title'>Practice Mode</h2>
       <p>
         <strong>Prompt:</strong> {practicePrompts[currentPrompt].prompt}
       </p>

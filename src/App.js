@@ -6,31 +6,27 @@ import Instructions from './components/Instructions';
 import PromptForm from './components/PromptForm';
 import Tips from './components/Tips';
 import Examples from './components/Examples';
-import Leaderboard from './components/Leaderboard';
 import PracticeMode from './components/PracticeMode';
 import HomePage from './pages/HomePage';
-import LeaderboardPage from './pages/LeaderboardPage';
 import PromptsGuide from './pages/PromptsGuide'; 
 import InteractiveExamplesPage from './pages/InteractiveExamplesPage';
 import PromptEngineeringTipsPage from './pages/PromptEngineeringTipsPage';
 import styled from '@emotion/styled';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { css, Global } from '@emotion/react';
+import { stylesheets } from './global.css';
 
 const globalStyles = css`
   body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    font-family: font-family: 'Inter';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #222;
   }
 
   code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-      monospace;
+    font-family: 'Inter';
   }
 `;
 
@@ -82,12 +78,10 @@ const App = () => {
                 appContainer={AppContainer}
                 tips={Tips}
                 examples={Examples}
-                leaderboard={Leaderboard}
                 practiceMode={PracticeMode}
               />
             }
           />
-          <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="/prompts-guide" element={<PromptsGuide />} />
           <Route path="/interactive-examples" element={<InteractiveExamplesPage />} />
           <Route path="/prompt-engineering-tips" element={<PromptEngineeringTipsPage />} />

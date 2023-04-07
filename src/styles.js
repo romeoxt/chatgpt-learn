@@ -1,11 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Introduction = styled.div`
-  padding: 1rem;
-  color: #fff;
-  text-align: center;
-  max-width: 900px;
-  margin: 1rem auto;
 `;
 
 export const Border = styled.div`
@@ -16,10 +11,6 @@ export const Border = styled.div`
 `;
 
 export const PromptSection = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
-  background-color: #333;
 `;
 
 export const AppContainer = styled.div`
@@ -30,12 +21,6 @@ export const AppContainer = styled.div`
 `;
 
 export const PageContainer = styled.div`
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #fff;
-  color: #333;
-  border-radius: 5px;
 `;
 
 export const Title = styled.h1`
@@ -48,9 +33,6 @@ export const Description = styled.p`
 `;
 
 export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 export const InputContainer = styled.div`

@@ -2,11 +2,6 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Container = styled.div`
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #fff;
-  color: #333;
 `;
 
 const Title = styled.h1`
@@ -33,7 +28,7 @@ const PromptsGuide = () => {
   const current_date = new Date().toISOString().substring(0, 10);
 
   return (
-    <Container>
+    <Container className='card-layout-box'>
       <Title>Prompts Guide</Title>
       <p>
         Instructing chat models

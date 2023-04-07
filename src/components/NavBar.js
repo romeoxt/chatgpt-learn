@@ -7,7 +7,6 @@ const NavBarContainer = styled.div`
   display: flex;
   justify-content: space-around;
   padding: 1rem;
-  border-bottom: 1px solid #4a4a4a;
 `;
 
 const NavLink = styled(RouterNavLink)`
@@ -24,12 +23,12 @@ const NavLink = styled(RouterNavLink)`
 
 const NavBar = () => {
   return (
-    <NavBarContainer>
+    <NavBarContainer className='navbar'>
+      <div className='wrapper'>
+      <div className='navbar-left'><img src='./images/gtp.png'/></div>
+      <div className='navbar-right'>
       <NavLink to="/" end activeClassName="active">
         Home
-      </NavLink>
-      <NavLink to="/leaderboard" activeClassName="active">
-        Leaderboard
       </NavLink>
       <NavLink to="/prompts-guide" activeClassName="active">
         Prompts Guide
@@ -40,6 +39,8 @@ const NavBar = () => {
       <NavLink to="/prompt-engineering-tips" activeClassName="active">
         Prompt Engineering Tips
       </NavLink>
+      </div>
+      </div>
     </NavBarContainer>
   );
 };

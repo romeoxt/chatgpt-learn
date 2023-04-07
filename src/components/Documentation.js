@@ -15,7 +15,7 @@ const ExampleItem = styled.div`
   align: center;
 `;
 
-const Examples = () => {
+const Documentation = () => {
   return (
     <ExamplesContainer className='card-container'>
       <h2 className='title'>Examples</h2>
@@ -39,4 +39,4 @@ const Examples = () => {
   );
 };
 
-export default Examples;
+export default Documentation;
