@@ -2,10 +2,6 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled';
 
 const Container = styled.div`
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: rgb(240, 241, 245);
 `;
 
 const Heading = styled.h2`
@@ -19,12 +15,6 @@ const Paragraph = styled.p`
 `;
 
 const Section = styled.section`
-  margin-bottom: 2rem;
-  padding: 1rem;
-  position: relative;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 4px;
 `;
 
 const InputContainer = styled.div`
@@ -109,7 +99,7 @@ const PromptEngineeringTipsPage = () => {
   };
 
   return (
-    <Container>
+    <Container className="card-layout-box">
       <Section>
         <Heading>Tip 1: Make Instructions More Explicit</Heading>
         <Paragraph>
